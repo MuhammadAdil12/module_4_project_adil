@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#main-section {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #7a7a7a, #33cbd0);
+    padding-bottom: 100px;
+}
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top:-120px ;
+}
+
+.display-div{
+  width: 100vw;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.display-div-nav{
+  background-color: #2a2a2a;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+}
+#book-icon, #water-icon {
+  font-size: 34px;
+  padding: 10px;
+  padding-right: 20px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.motivational-quote-div{
+  margin-top: 30px ;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.MotivationalQuote{
+  width: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+.first-row{
+  width: 100vw;
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.second-row{
+  width: 100vw;
+  height: 300px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-item::-webkit-scrollbar {
+  display: none;
+}
+
+.result-item{
+    width: 100%;
+    display: flex;
+    overflow-y: scroll;
+}
+.item{
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    backdrop-filter: blur(200px);
+   background: rgba(0, 0, 0, 0.3);
+  
+}
+.result-item a{
+  text-decoration: none;
+  color: #fff; 
+  font-weight: bold;
+  font-size: 22px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-nav-div{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d8d2d2;
+
+}
+a {
+    color: #171717;
+}
+
+.div3{
+   text-align: center;
+}
+
+.bottom-nav-div{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d8d2d2;
+}
+#icons{
+  font-size: 34px;
+}
+a {
+  color: #000000;
+}
+
+.water-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.main-div-water {
+  width: 30%;
+  height: auto; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.79);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px; 
+}
+.main-div h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.water-target-div, .water-consumed-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+.water-target-div{
+  margin-bottom: 25px;
+
+}
+.water-target-div input, .water-consumed-div input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.water-target-div button, .water-consumed-div button {
+  padding: 10px 20px;
+  background-color: #333;
+  width: 100px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.water-target-div button:hover, .water-consumed-div button:hover {
+  background-color: #0c0e0f;
+}
+.icons-close-reset {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom:1.5rem;
+}
+
+#close-icon, #reset-icon{
+  cursor: pointer;
+}
+.water-target-div h1{
+  font-size: 25px;
+
+}
+.water-consumed-div h1{
+  font-size: 25px;
+}
+
+
+
+@media (max-width: 768px){
+    .search-result{
+      grid-gap:10px
+    }
+    
+    .MotivationalQuote{
+      width: 90%;
+    }
+
+    .main-div-water{
+      width: 50%; 
+    }
+   
+}
+@media only screen and (max-width: 500px) {
+  #icons{
+      font-size: 24px;
+  
+  }
+  .motivational-quote-div{
+    margin-top: 20px ;
+  }
+  .water-target-div button, .water-consumed-div button {
+    width: 90%;
+  }
+
+  .main-div-water{
+    width: 70%; 
+  }
+  
+
+}

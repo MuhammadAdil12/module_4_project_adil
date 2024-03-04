@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-section {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #7a7a7a, #33cbd0);
+}
+.resultDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 50px;
+}
+.firstDiv {
+    width: 55%;
+    max-height: 85px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+
+.search-bar{
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.title-search-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+
+}
+
+.submit-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.submit-btn{
+    width: 30%;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.secondDiv{
+    width: 40%;
+    height: 530px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.resultList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 9px 15px;
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1px black dotted;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.form-label, .loading{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0;
+}
+.form-label{
+    width: 80%;
+    font-size: 20px;
+}
+
+.loading-parent {
+    width: 100%;
+    text-align: center;
+}
+#recipe {
+    margin-top: 50px;
+}
+.results {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 9px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.results li {
+    padding-right: 5px;
+}
+.li-tag{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-div-ul{
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}
+.bottom-nav-div{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d8d2d2;
+
+}
+
+#gen-pt-2{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-bottom: 150px;
+}
+
+.caloriesBtn{
+    width: 70%;
+    margin-top: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+ .input-parent{
+     width: 100%;
+     display: grid;
+     grid-gap: 25px;
+     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+     padding: 10px;
+ }
+
+ 
+ .input-group label{
+     position: absolute;
+     left: 25px;
+     top: 25%;
+     transition: 0.5s;
+ }
+ .input-group{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.input{
+    font-size: 17px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+ 
+ #input-tags:focus ~ .inputs{
+     top: -0.5rem;
+     font-size: 0.8rem;
+     left: 0.8rem;
+ }
+
+  .secondDiv-total-fat, .secondDiv-total-carbs, .secondDiv-total-protein{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0;
+  }
+ 
+
+.back-arrow{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    padding: 20px;
+  }
+
+@media only screen and (max-width: 625px) { 
+    #gen-pt-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .search-bar{
+        width: 70%;
+    
+    }
+    .submit-btn{
+        width: 50%;
+    }
+
+    .caloriesBtn{
+        margin-top: 50px;
+    }    
+}
+@media only screen and (max-width: 940px) {
+
+    .firstDiv {
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .resultDiv{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        padding-bottom: 100px;
+    }
+
+    .secondDiv{
+        width: 75%;
+        height: 530px;
+        background-color: whiteSmoke;
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .firstDiv {
+        width: 95%;
+        max-height: 150px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    
+    }
+    .form-label{
+        width: 65%;
+    }
+
+}
+

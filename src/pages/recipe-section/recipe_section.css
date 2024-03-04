@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.back-arrow{
+    position: absolute;
+    padding: 20px;
+  }
+
+.food-finder{
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#search-form-control{
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-input{
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#search-icon{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.result-item-from-search {
+    margin-top: 150px; 
+    padding-left: 25px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
+
+.item-from-recipe-section{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.item-from-recipe-section img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.item-from-recipe-section .flex-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px; 
+    margin-bottom: 20px
+}
+.data-cal{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 16px;
+}
+
+.expand-ingredient{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 15px;
+}
+.ingredient-list{
+    margin-top: 20px;
+}
+.expand-ingredient-p-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.item-from-recipe-section .title {
+    color: #333;
+    margin: 0;
+    font-size: 1.6rem; 
+    font-weight: 600; 
+}
+
+.view-recipe {
+    display: inline-block; 
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px; 
+    background-color: #404041;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+}
+
+.view-recipe:hover {
+    background-color: #333; 
+}
+
+
+.loading-parent{
+    margin-top: 150px;
+}
